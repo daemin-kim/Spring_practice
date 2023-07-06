@@ -32,7 +32,8 @@ dependencies {
 	implementation 'com.borjaglez:springify-repository:0.3.3'
 	implementation 'io.overcoded:dynamic-repository:1.3.2'
 	implementation 'com.github.marschall:spring-batch-inmemory:2.1.0'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.projectlombok:lombok:1.18.26'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {

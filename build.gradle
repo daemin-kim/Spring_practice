@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter:3.1.0'
     implementation 'com.englishtown.vertx:vertx-httpservlet:2.2.1'
 	implementation 'com.englishtown.vertx:vertx-httpservlet-parent:2.2.1'
 	implementation 'com.englishtown:vertx-mod-httpservlet:0.1.0'
@@ -33,8 +33,10 @@ dependencies {
 	implementation 'io.overcoded:dynamic-repository:1.3.2'
 	implementation 'com.github.marschall:spring-batch-inmemory:2.1.0'
     implementation 'org.projectlombok:lombok:1.18.26'
-    implementation 'junit:junit:4.13.1'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'junit:junit:4.13.2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.0'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.4'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {

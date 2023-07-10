@@ -16,12 +16,8 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter:3.1.0'
-    implementation 'com.englishtown.vertx:vertx-httpservlet:2.2.1'
-	implementation 'com.englishtown.vertx:vertx-httpservlet-parent:2.2.1'
+
 	implementation 'com.englishtown:vertx-mod-httpservlet:0.1.0'
-	implementation 'net.officefloor.server:officeserver_servlet_test:3.40.0'
-	implementation 'net.officefloor.tutorial:HttpServletHttpServer:3.17.0'
 	implementation 'com.ericsson.research.trap.transports:http-server-servlet-2.5:1.4.2'
 	implementation 'net.officefloor.server:officeserver_servlet:3.40.0'
 	implementation 'com.ericsson.research.trap.transports:http-server-servlet-3.0:1.4.2'
@@ -29,16 +25,13 @@ dependencies {
 	implementation 'cloud.piranha.webapp:piranha-webapp-webservlet:20.5.0'
 	implementation 'cloud.piranha.servlet:piranha-servlet-webservlet:20.4.0'
 	implementation 'com.github.joutvhu:spring-dynamic-jpa:3.0.7'
-	implementation 'com.borjaglez:springify-repository:0.3.3'
 	implementation 'io.overcoded:dynamic-repository:1.3.2'
 	implementation 'com.github.marschall:spring-batch-inmemory:2.1.0'
     implementation 'org.projectlombok:lombok:1.18.26'
     implementation 'junit:junit:4.13.2'
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.0'
 	implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.4'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
-}
-
-tasks.named('test') {
-	useJUnitPlatform()
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.4'
+	implementation 'org.springframework.boot:spring-boot-test.3.1.1'
 }
